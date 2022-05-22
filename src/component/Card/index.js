@@ -43,7 +43,9 @@ const Card = ({
 
         <Divider />
         {/* footer */}
-        <div style={{ display: "flex", justifyContent: "flex-end", gap : "12px" }}>
+        <div
+          style={{ display: "flex", justifyContent: "flex-end", gap: "12px" }}
+        >
           <div
             style={{
               display: "flex",
