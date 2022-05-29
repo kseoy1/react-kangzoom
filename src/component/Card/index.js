@@ -78,7 +78,6 @@ const Card = ({
             }}
           >
             <svg
-              class="w-6 h-6"
               width="18px"
               height="18px"
               fill="none"
@@ -89,7 +88,7 @@ const Card = ({
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                stroke-width="2"
+                strokeWidth="2"
                 d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
               ></path>
               <path
