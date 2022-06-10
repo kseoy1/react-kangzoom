@@ -1,22 +1,15 @@
 import { Container, Grid } from "@mui/material";
-import data from "./dummy/data";
-import Card from "./component/Card";
+import Board from "./component/Card/Board";
 import Layout from "./component/Layout";
+import { getList } from "./util";
 
 function App() {
-  const dummy = data();
-
+  
   return (
     <Layout>
       <Container maxWidth="md">
         <Grid container spacing={6}>
-          {dummy.map((item, i) => {
-            return (
-              <Grid item xs={6} key={i}>
-                <Card data={item} />
-              </Grid>
-            );
-          })}
+          <Board />
         </Grid>
       </Container>
     </Layout>
