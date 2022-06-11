@@ -19,7 +19,7 @@ export const formatBytes = (byte, decimal = 2) => {
   const dm = decimal < 0 ? 0 : decimal;
   const sizes = ["Byte", "KB", "MB", "GB", "TB", "PB", "EB", "ZB", "YB"];
 
-  const i = Math.floor(Math.log(byte) / Math.log(k));
+  const i = Math.floor(Math.log(byte) / Math.log(k));z
 
   return parseFloat((byte / Math.pow(k, i)).toFixed(dm)) + " " + sizes[i];
 };
@@ -37,7 +37,6 @@ export const write = (data) => {
     like: 0,
     view: 0,
     createDate: getFullTimeStamp(new Date()),
-    // TODO 이미지 로컬 스토리지에 올릴 방법?
     image: "./image/1.jpg",
   };
   const result = JSON.stringify([...prev, next]);
